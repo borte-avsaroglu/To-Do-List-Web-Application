@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #000512 !important;
+}
+
+.blured {
+    background-image: url("../images/bg_img.jpg");
+    height: 100vh;
+    width: 100%;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+}
+
+.container-main {
+    height: 600px;
+    width: 1150px;
+    background-color: rgba(255, 255, 255, 0.473);
+    border: 2px solid #FE3745;
+    border-radius: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    overflow-x: hidden;
+    display: flex;
+}
+
+
+/* USER PANEL */
+
+.user-panel {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(14, 17, 17, 0.6);
+    border-right: 2px solid #FE3745;
+    padding: 0.8rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.user-panel .user-img {
+    background-image: url("../images/bort.jpg");
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    background-position: center;
+    background-size: cover;
+    margin: 1rem auto;
+    border: 1px solid grey;
+}
+
+.user-panel .user-info {
+    text-align: center;
+}
+
+.user-panel .user-info h2 {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.user-panel .user-info h3 {
+    color: rgba(255, 255, 255, 0.329);
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+}
+
+
+/* User Social Media */
+
+.user-sm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.user-sm a {
+    margin: 1.3rem 0;
+    font-size: 2.5rem;
+    transition: padding-left 0.5s ease-out;
+}
+
+.user-sm a:hover {
+    padding-left: 2.5rem;
+    opacity: 0.8;
+}
+
+.user-sm .fa-facebook-f {
+    color: #4064AC;
+}
+
+.user-sm .fa-youtube {
+    color: #F60000;
+}
+
+.user-sm .fa-instagram {
+    color: #F35E79;
+}
+
+
+/* MAIN PANEL */
+
+.todopanel {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    margin-left: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* HEADER */
+
+.todopanel .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 0.7rem 0;
+}
+
+.todopanel .header h1 {
+    color: #FE3745;
+    font-size: 2.6rem;
+}
+
+.todopanel .header #currentdate {
+    align-self: center;
+}
+
+
+/* FORM */
+
+#addbtn {
+    margin-top: 0.6rem;
+    background-color: #FE3745;
+    border: #FE3745;
+}
+
+#addbtn:hover {
+    background-color: #F35E79;
+}
+
+
+/* TABLE */
+
+table {
+    margin: 1.5rem auto;
+    display: inline-block;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    border-collapse: collapse;
+    height: 300px;
+}
+
+tr th {
+    top: 0;
+    position: sticky;
+    margin-right: 30px;
+    margin-top: -30px;
+    padding: 1rem;
+    background-color: #403F46;
+    margin-bottom: 30px;
+    color: white;
+}
+
+th {
+    width: 250px;
+}
+
+table .btn-grup {
+    display: flex;
+}
+
+tbody tr td {
+    padding: 1rem;
+}
+
+table i {
+    font-size: .8rem !important;
+    text-align: center !important;
+    width: 50% !important;
+    height: 55% !important;
+    margin-right: .5rem;
+    padding: .5rem .7rem !important;
+    background-color: #FE3745 !important;
+    color: white !important;
+    border: #FE3745 !important;
+}
+
+table button:hover {
+    background-color: #F35E79 !important;
+}
+
+tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.521);
+}
+
+#infos-block tr td input {
+    border: none;
+    background-color: transparent;
+}
+
+#infos-block tr td input:enabled {
+    background-color: white;
+    color: black;
+    border: 1px solid #403F46;
+}
+
+
+/* Scroll CSS */
+
+#info {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #074E8C;
+}
+
+#style-12::-webkit-scrollbar-track {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: #403F46;
+}
+
+#style-12::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#style-12::-webkit-scrollbar-thumb {
+    background-color: #FE3745;
+    background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.3) 50%, transparent, transparent)
+}
